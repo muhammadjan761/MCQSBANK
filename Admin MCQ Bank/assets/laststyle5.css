@@ -1,0 +1,331 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+nav{
+	background: black;
+	width: 200px;
+	position: fixed;
+	z-index: 111;
+}
+nav ul{
+	background-color: black;
+	padding-top: 20px;
+	height: 100%;
+}
+nav ul li{
+	padding:10px;
+	margin-left: -32px;
+}
+nav ul li i{
+	padding: 5px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color: grey;
+	padding-left:10px; 
+}
+label.logo a{
+	color: white;
+	font-size: 20px;
+	line-height: 60px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 10px;
+}
+/*loader wraper*/
+.loader-wraper{
+	width: 100%;
+	height: 100%;
+	background: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 11111;
+}
+.sidebar{
+	border-top:2px solid white;
+	left: 12px;
+	width: 200px;
+	height: 100%;
+	position:fixed;
+	top: 60px;
+
+}
+.wrapper{
+	width: 78%;
+	left: 20%;
+	top: 15%;
+	position: fixed;
+	justify-content: auto;
+
+}
+#checkbtn{
+	color: white;
+	border: 2px solid white;
+	padding: 5px;
+	line-height: 5px;
+	position: absolute;
+	left: 170px;
+	top: 30px;
+
+	border-radius: 5px;
+	cursor: pointer;
+	display: none;
+}
+#cancelbtn{
+	color: white;
+	border: 2px solid white;
+	padding: 5px;
+	line-height: 5px;
+	position: absolute;
+	left: 170px;
+	top: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: none;
+}
+#click{
+	display: none;
+}
+.uppernav{
+	background: black;
+	color: white;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	left: 12px;
+	top:0px;
+}
+.uppernav .user-profile{
+	border-left: 2px solid white;
+	float: right;
+	width: 100px;
+	height: 60px;
+	margin-right: 100px;
+}
+.uppernav .user-profile i {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+}
+.Quest{
+	width: 220px;
+	height: 150px;
+}
+#model{
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 0;
+	left:0;
+	width:100%;
+	height: 100%;
+	z-index: 120;
+	display: none;
+}
+#model-form{
+	background: #fff;
+	width: 55%;
+	position: relative;
+	top: 20%;
+	left: calc(50% - 30%);
+	padding: 15px;
+	border-radius: 4px;
+}
+#close-btn{
+	position: absolute;
+	left:93%;
+	top: 12%;
+	width: 30px;
+	height: 30px;
+}
+
+/*login page*/
+
+.login-wrapper{
+	border:2px solid black;
+	width: 30%;
+	margin-left: 37%;
+	margin-top: 10%;
+}
+
+#loginbtn{
+	float: right;
+}
+
+
+/*add subject page*/
+.subform_wrapper{
+	width: 25%;
+	margin-top: 10%;
+	margin-left: 5%;
+
+}
+.tablesubject-body{
+width: 50%;
+float: right;
+margin-top: -250px;
+margin-right: 5%;
+}
+#edit_cat_box{
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 0;
+	left:0;
+	width:100%;
+	height: 100%;
+	z-index: 120;
+	display: none;
+	
+}
+#edit_cat_box_form{
+background: white;
+width: 30%;
+height: 25%;
+position: relative;
+top: 30%;
+left: 30%;
+border-radius: 5px;
+}
+#edit_cat_box_form table{
+width: 100%;
+height: 100%;
+}
+
+#close-bt{
+	position: absolute;
+	left:90%;
+	top: 3%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+
+}
+.search-wrapper{
+	position: fixed;
+	background: white;
+	width: 20%;
+	left: 63%;
+	top: 2%;
+	border-radius: 10px;
+	z-index: 121;
+}
+#search{
+	border-radius: 10px;
+}
+#searchbtn{
+	color: #212529;
+	position: fixed;
+	top: 4%;
+	left: 80%
+
+
+}
+@media only screen and (max-width: 450px){
+	.subform_wrapper{
+		width: 100%;
+		margin-left: 0px;
+	}
+	.tablesubject-body{
+		width: 100%;
+		float: none;
+		margin-top: 20px;
+	}
+	nav{
+		height: 80px;
+		width: 100%;
+		position: fixed;
+	}
+	label.logo a{
+		line-height: 90px;
+		margin-left: 45px;
+	}
+	.wrapper{
+		top: 80px;
+		left: 40px;
+	}
+#checkbtn{
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	left:10px;
+
+}
+#cancelbtn{
+	display: block;
+	position: absolute;
+	left:-60px;
+	cursor: pointer;
+	transition: .01s all;
+}
+#model-form{
+	top: 10%;
+
+}
+#close-btn{
+	position: absolute;
+	left: 85%;
+	top: 3%;
+}
+.sidebar{
+	top: 80px;
+	position: fixed;
+	width: 348px;
+	left: -348px;
+	height: 100%;
+	background: black;
+	border-top: 2px solid white;
+	border-left: none;
+	border-right: none;
+	border-bottom: none; 
+	transition: .5s all;
+	transition-timing-function: linear;
+}
+
+#click:checked ~ .sidebar{
+left:12px;
+}
+#click:checked ~ #cancelbtn{
+left: 10px;
+}
+#click:checked ~ #checkbtn{
+	display: none;
+
+}
+#edit_cat_box_form{
+	width: 60%;
+	left: 20%;
+}
+#close-bt{
+	left: 85%;
+	top: 0%;
+}
+.search-wrapper{
+	top:32px;
+	left: 55%;
+	height: 30px;
+	width: 40%;
+}
+#search{
+	height: 30px;
+}
+#searchbtn{
+	top: 5.5%;
+	left: 89%;
+}
+/*add subjects page*/
+
+
+}
+
+/*cat page*/
